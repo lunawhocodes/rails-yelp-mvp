@@ -1,0 +1,17 @@
+<h1>Help us find more</h1>
+
+<%= form_for(@restaurant) do |restaurant_form| %>
+  <%= @restaurant_form.label :name %>
+  <%= @restaurant_form.text_field :name %>
+
+  <%= @restaurant_form.label :address %>
+  <%= @restaurant_form.text_field :address %>
+
+  <%= @restaurant_form.label :phone %>
+  <%= @restaurant_form.text_field :phone %>
+
+  <%= @restaurant_form.label :category %>
+  <%= @restaurant_form.text_field :category %>
+
+  <%= @restaurant_form.submit %>
+<% end %>
